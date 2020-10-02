@@ -79,3 +79,98 @@ header nav ul li a:hover {
     font-family: 'Playfair Display', serif;
     color: #fff;
 }
+
+/* about me section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.section-title {
+    flex: 1 15%;
+    align-self: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 60px auto;
+    justify-content: space-around;
+}
+.section-title h2 {
+    color: #602f6b;
+    padding-left: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    flex: 12 60%;
+    margin: 60px auto;
+    padding-right: 20px;
+}
+.about-info p {
+    color: #602f6b;
+    line-height: 1.6;
+    border-left: 3px solid #C3E4ED;
+    padding-left: 40px;
+}   
+
+/* portfolio section 
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.portfolio-title {
+    flex: 1 15%;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 60px auto;
+    justify-content: space-around;
+}
+.portfolio-title h2 {
+    color: #602f6b;
+    padding-left: 20px;
+    font-family: 'Playfair Display', serif;
+}
+*/
+
+/* contact me section */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+.contact-title {
+    flex: 1 15%;
+    align-self: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 60px auto;
+    justify-content: space-around;
+}
+.contact-title h2 {
+    color: #602f6b;
+    padding-right: 20px;
+    padding-left: 15px;
+    font-family: 'Playfair Display', serif;
+    text-align: right;
+}
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 3px solid #C3E4ED;
+    padding-left: 40px;
+    flex: 12 70%;
+}
+.contact-info a {
+    padding: 15px;
+    color: #602f6b
+}
