@@ -80,41 +80,36 @@ header nav ul li a:hover {
     color: #fff;
 }
 
-/* about me section */
-.about {
+.page-section {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-.section-title {
-    flex: 1 15%;
-    align-self: center;
     flex-wrap: wrap;
-    display: flex;
-    margin: 60px auto;
-    justify-content: space-around;
+    width: 100%;
+    padding: 60px;
 }
-.section-title h2 {
+.page-section h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid #C3E4ED;
+    font-size: 4vw;
     color: #602f6b;
-    padding-left: 20px;
-    font-family: 'Playfair Display', serif;
+    line-height: 1.1;
 }
+
+/* about me section */
 .about-info {
     display: flex;
-    flex-wrap: wrap;
-    align-self: stretch;
-    flex: 12 60%;
-    margin: 60px auto;
-    padding-right: 20px;
+    flex: 12 70%;
+    align-items: center;
+    padding-left: 30px;
 }
 .about-info p {
     color: #602f6b;
-    line-height: 1.6;
-    border-left: 3px solid #C3E4ED;
-    padding-left: 40px;
-}   
+    line-height: 1.4;
+}
+
+
 
 /* portfolio section 
 .portfolio {
@@ -139,36 +134,14 @@ header nav ul li a:hover {
 */
 
 /* contact me section */
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: row;
-}
-.contact-title {
-    flex: 1 15%;
-    align-self: center;
-    flex-wrap: wrap;
-    display: flex;
-    margin: 60px auto;
-    justify-content: space-around;
-}
-.contact-title h2 {
-    color: #602f6b;
-    padding-right: 20px;
-    padding-left: 15px;
-    font-family: 'Playfair Display', serif;
-    text-align: right;
-}
+
 .contact-info {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    border-left: 3px solid #C3E4ED;
+    justify-content: space-around;
     padding-left: 40px;
-    flex: 12 70%;
+    flex: 1 15%;
 }
 .contact-info a {
     padding: 15px;
