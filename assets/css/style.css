@@ -31,7 +31,11 @@ header h1 {
     font-family: 'Playfair Display', serif;
 }
 header h1 a:hover {
-    color: #ff91a4;
+    background: #ff91a4;
+    color: #fff;
+    border-radius: 10px;
+    text-shadow: none;
+    transition: 0.5s;
 }
 header a {
     text-decoration: none;
@@ -54,8 +58,11 @@ header nav ul li a {
     font-family: 'Playfair Display', serif;
 }
 header nav ul li a:hover {
-    color: #ff91a4;
-    border-bottom: 3px solid #ff91a4;
+    background: #ff91a4;
+    color: #fff;
+    border-radius: 10px;
+    text-shadow: none;
+    transition: 0.5s;
 }
 /*end header styles */
 
@@ -160,24 +167,6 @@ header nav ul li a:hover {
     opacity: 1;
 }
 
-/*
-.grid-item h3 {
-    background-color: #87CEFF;
-    text-align: center;
-    font-size: 22px;
-    padding-bottom: 10px;
-    color: #fff;
-    position: relative;
-    margin-bottom: 15px;
-}
-.grid-item p {
-    background-color: #87CEFF;
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-    position: absolute;
-}
-*/
 .item-name {
     background-color: #87CEFF;
     text-align: center;
@@ -262,4 +251,82 @@ header nav ul li a:hover {
 .contact-info a {
     padding: 15px;
     color: #87CEFF;
+}
+.contact-info a:hover {
+    background: #ff91a4;
+    color: #fff;
+    border-radius: 10px;
+    text-shadow: none;
+    transition: 0.5s;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .page-section {
+        padding: 35px;
+    }
+    .page-section h2 {
+        flex: 1 100%;
+        padding-bottom: 15px;
+        border-bottom: 4px solid #87CEFF;
+        font-size: 4vw;
+        color: #ff91a4;
+        line-height: 1.1;
+        text-align: center;
+        border-right: none;
+        padding-right: 0px;
+    }
+    .about-info {
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .about-info p {
+        font-size: 14px;
+    }
+    .container {
+        padding-top: 15px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(auto, 400px));
+        grid-template-rows: repeat(3, minmax(auto, 200px));
+        padding-left: 0px;
+        grid-gap: 0.5em;
+    }
+    .surf-report {
+        grid-row: 1;
+        grid-column: 1/span 2;
+    }
+    .led-wall {
+        grid-row: 2/ span 1;
+        grid-column: 1/ span 1;
+    }
+    .calculator {
+        grid-row: 2/ span 1;
+        grid-column: 2/ span 1;
+    }
+    .pastel-puzzle {
+        grid-row: 3/ span 1;
+        grid-column: 1/ span 1;
+    }
+    .run-buddy {
+        grid-row: 3/ span 1;
+        grid-column: 2/ span 1;
+    }
+    .item-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0px;
+        padding-top: 15px;
+        flex: 1 40%;
+    }
 }
