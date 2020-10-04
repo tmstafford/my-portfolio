@@ -132,6 +132,7 @@ header nav ul li a:hover {
     align-items: flex-start;
     position: relative
 }
+
 .grid-item {
     max-width: 100%;
     border: 6px solid #87CEFF;
@@ -142,8 +143,24 @@ header nav ul li a:hover {
     text-decoration: none;
     height: 100%;
     width: 100%;
+    overflow: hidden;
+}
+.grid-item::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(252, 225, 56, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.grid-item:hover::after {
+    opacity: 1;
 }
 
+/*
 .grid-item h3 {
     background-color: #87CEFF;
     text-align: center;
@@ -159,6 +176,27 @@ header nav ul li a:hover {
     font-weight: bold;
     color: #fff;
     position: absolute;
+}
+*/
+.item-name {
+    background-color: #87CEFF;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 5px 10px;
+    font-family: 'Playfair Display', serif;
+}
+.item-name h3 {
+    font-size: 22px;
+    position: relative;
+    color: #fff;
+    padding-bottom: 5px;
+}
+.item-name p {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
 }
 .surf-report {
     background-image: url("../images/surf.jpeg");
